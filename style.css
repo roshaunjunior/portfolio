@@ -1,0 +1,293 @@
+ 
+/* For repeatition  */
+:root {
+    --main-bg-color: #6c5ce7;
+    --black-color: #000;
+    --margin : 0px;
+    --padding : 0px;
+    --white-main-color: #fff;
+    --dark-gray-color: #1e272e;
+    --light-gray-color: #747474;
+    --very-light-gray-color: #f0f0f0;
+}
+
+/* Default for all  */
+
+*{
+    margin: var(--margin);
+    padding: var(--padding);
+    box-sizing: border-box;
+}
+/* body font family */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* bullets point */
+ul {
+    list-style: none;
+}
+
+/* underlines */
+
+a {
+    text-decoration: none;
+}
+/* main section */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* nav bar */
+
+nav {
+    display: flex;
+    /* left to right */
+    justify-content: space-around;
+    /* top to bottom */
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--white-main-color);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* menu */
+.menu {
+    display: flex;
+}
+
+/* list items */
+
+nav ul li a{
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #585b55;
+    letter-spacing: 1px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 43px;
+}
+
+/* hover */
+ nav ul li a:hover {
+     background-color: var(--main-bg-color);
+     color: var(--white-main-color);
+     border-radius: 5px;
+ }
+
+ /* get in touch button */
+ .get-in-touch {
+     color: var(--dark-gray-color);
+     font-weight: 500;
+     font-size: 1rem;
+     border-bottom: 2px solid var(--main-bg-color);
+ }
+
+ /* Logo  */
+ .logo-heading {
+     font-weight: 300;
+     font-size: 30px;
+     color: var(--black-color);
+ }
+
+ .name {
+     font-weight: 800;
+     text-decoration: underline;
+     text-decoration-color: var(--main-bg-color);
+ }
+ /* end of navbar */
+
+ /* Main content */
+ .content {
+     display: flex;
+     width: 90%;
+     justify-content: space-around;
+     align-items: center;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .model {
+     height: 500px;
+     width: 500px;
+ }
+
+ .model img {
+     width: 100%;
+     height: 100%;
+     /* for fitting object in the div*/
+     object-fit: contain;
+    
+ }
+
+ .main-text h1 {
+    font-size: 50px;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+ }
+
+ .main-text p {
+     color: var(--light-gray-color);
+ }
+
+ .portfolio-button {
+     width: 200px;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: var(--white-main-color);
+     background-color: var(--main-bg-color);
+     border-radius: 5px;
+     margin-top: 15px;
+ }
+ /* end of main content */
+
+ /* Skill content */
+ .skills {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 80%;
+     margin: auto auto 50px auto;
+ }
+
+ .skill-img {
+     width: 45%;
+ }
+
+ .skill-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+ }
+
+ .skill-text {
+     width: 40%;
+    
+ }
+
+ .skill-heading span {
+     color: var(--main-bg-color);
+     font-weight: 500;
+     text-transform: uppercase;
+     font-size: 15px;
+     letter-spacing: 1px;
+ }
+
+ .skill-heading h2 {
+     color: var(--dark-gray-color);
+     font-size: 45px;
+     margin: 0px;
+     font-weight: 600;
+     letter-spacing: 1px;
+
+ }
+
+ .s-box-container {
+     margin-top: 15px;
+ }
+
+ .skill-box {
+     display: flex;
+     margin: 25px 0px;
+ }
+
+ .s-box-icon {
+     margin-right: 15px;
+ }
+
+ .s-box-icon i {
+     font-size: 30px;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     background-color: var(--very-light-gray-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: var(--main-bg-color);
+ }
+
+ .s-box-text strong {
+     color: var(--dark-gray-color);
+     margin: 0px;
+     font-size: 15px;
+     font-weight: 600;
+ }
+
+ .s-box-text p {
+     font-size: 15px;
+ }
+ /* End of Skill content */
+ /* projects  */
+ .my-projects {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 95%;
+     margin: auto auto 50px auto;
+     flex-direction: column;
+ }
+
+ .project-showcase {
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+    
+
+ }
+ .project {
+     width: 300px;
+     height: 200px;
+     border-radius: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 30px 0px;
+ }
+
+ .one {
+     background-image: url(imgs/comapany-1.jpg);
+     background-size: contain;
+ }
+ .two {
+     background-image: url(imgs/company-2.png);
+     background-size: contain;
+ }
+ .three {
+     background-image: url(imgs/company-3.jpg);
+     background-size: contain;
+ }
+
+ .project #hide {
+     visibility: hidden;
+     background-color: var(--white-main-color);
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 15px;
+     opacity: 100px;
+     z-index: 1000;
+ }
+
+ .project:hover #hide{
+       visibility: visible;
+       border: 1px solid var(--main-bg-color);
+ }
+
+ /* End of projects  */
